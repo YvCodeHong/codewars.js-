@@ -15,3 +15,4 @@ var anArray = [1, -2, 8, 12]
 
 positiveSum(anArray)
 
+//const positiveSum = (arr) => arr.reduce((sum, n) => n > 0 ? sum + n : sum, 0);
