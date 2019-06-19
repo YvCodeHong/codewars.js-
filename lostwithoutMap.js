@@ -10,8 +10,6 @@
 const maps = x => x.map(num => num * 2); 
 
 
-
-
 function maps(x) {
     return x.map(n => n * 2); 
 }
