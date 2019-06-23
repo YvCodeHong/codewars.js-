@@ -5,3 +5,9 @@
 function divisibleBy(numbers, divisor) {
     return numbers.filter(num => num % divisor === 0)
 }
+
+//ES6 
+
+const divisibleBy = (numbers, divisor) =>
+    numbers.filter(num => num % divisor === 0)
+
