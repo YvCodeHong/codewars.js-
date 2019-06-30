@@ -14,6 +14,13 @@ function sumMix(x) {
 
 console.log(sumMix([1, '2', 3]));
 
+
+//Another way 
+
+function sumMix(x){
+    return x.map(x => parseInt(x)).reduce((a,b) => a + b);
+}
+
 //one line code 
 
 const sumMix = x => x.reduce((total, value) => total + Number(value), 0)
