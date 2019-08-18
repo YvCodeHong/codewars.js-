@@ -19,12 +19,3 @@ const countSheep = function(num) {
 }
 
 
-//shorter
-
-const countSheep = function (num) {
-    let result = '';
-    for (let i = 1; i <= num; i++) {
-        result += i.toString() + ' sheep...';
-    }
-    return result;
-}
