@@ -12,3 +12,11 @@
 function sum(numbers){
     return numbers.reduce((acc, n) => acc + n, 0);
 };
+
+
+///another way 
+
+function sum(numbers) {
+    "use strict";
+    return numbers.reduce((res, v) => res+v,0);
+}
