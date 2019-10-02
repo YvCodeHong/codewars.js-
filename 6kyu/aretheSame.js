@@ -26,3 +26,10 @@ function comp(array1, array1) {
     array1.sort((a, b) => a - b); array2.sort((a, b) => a -b);
     return array1.map(v => v * v).every((v, i) => v == array2[i]);
 }
+
+
+//shorter version 
+
+function comp(a, b) {
+    return !!a && !!b && a.map(x => x*x).sort().join() == b.sort().join()
+}
