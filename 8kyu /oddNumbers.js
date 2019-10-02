@@ -7,3 +7,26 @@ function oddCount(n) {
     return Math.floor(n / 2)
 }
 
+
+//longer version 
+
+function oddCount(n) {
+    var count = 0; 
+    arr = []; 
+    do { 
+        count++; 
+        arr.push(count);
+ } while (count < n)
+
+ console.log(arr);
+
+ for(var i = 0; i < arr.length; i++){
+     if(((arr[i]) % 2) === 0) {
+         arr.splice((arr[i]));
+         return arr;
+        }
+    }
+}
+
+console.log(oddCount.arr);
+console.log(oddCount(7));
