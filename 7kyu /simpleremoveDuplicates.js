@@ -10,5 +10,21 @@
 //Good luck! 
 
 function solve(arr) {
+    for (var i=0; i<arr.length; i++) {
+        if (arr.indexOf(arr[i], i+1)>0) {
+            arr.splice(i, 1);
+            --i; 
+        }
+    }
+    return arr; 
+}
+
+
+
+
+//short cut 
+
+function solve(arr) {
     return [...new Set(arr.reverse())].reverse()
 }
+
