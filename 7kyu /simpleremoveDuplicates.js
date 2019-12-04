@@ -19,9 +19,6 @@ function solve(arr) {
     return arr; 
 }
 
-
-
-
 //short cut 
 
 function solve(arr) {
