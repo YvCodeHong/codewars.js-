@@ -42,3 +42,4 @@ function number2words(n) {
         return number2words(Math.floor(n / 1000)) + ' thousand' + (n % 1000 === 0 ? '' : ' ' + number2words(n % 1000));
     }
 }
+
