@@ -18,5 +18,11 @@ function solution(str) {
 solution("world");
 
 
-//short cut 
+/// shortcut methods 
 
+
+function solution(str){
+    return str.split("").reverse().join("");
+}
+
+solution("world");
