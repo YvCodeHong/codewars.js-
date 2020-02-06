@@ -24,3 +24,22 @@ function oddOrEven(array){
         return "odd";
     }
 }
+
+
+//another way 
+
+function oddOrEven(array) {
+    if(array.length === 0){
+        return 'even'
+    }
+    var sum = array.reduce(add, 0)
+    function add(x, y){
+        return x + y 
+    }
+    if(sum % 2 == 0){return 'even'}
+    else{return 'odd'}
+}
+
+//short cut 
+
+const oddOrEven = a => a.reduce((a, b) => a + b, 0) % 2 === 0 ? 'even' : 'odd';
