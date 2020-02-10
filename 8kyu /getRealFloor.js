@@ -31,4 +31,4 @@ function getRealFloor(n) {
 
 //shortcut 
 
-const getRealFloor = n => (n > 13 ? n - 2 : n > 0 ? n - 1 : n)
+const getRealFloor = n => (n > 13 ? n - 2 : n > 0 ? n - 1 : n )
